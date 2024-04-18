@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | ExploreWaterford.com</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="home.html"> <img src="weblogo.png" alt="Logo" class="logo"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+		    <li class="nav-item active">
+                <a class="nav-link" href="services.html">Services</a>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="booking.html">Booking</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Banner -->
+<div class="banner">
+    <img src="bannerwaterford.jpg" class="img-fluid" alt="Banner Image">
+</div>
+
+<!-- SideBar -->
+<div class="rightsidebar"></div>
+<div class="leftsidebar"></div>
+
+<!-- Main -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>About Waterford</h3>
+            <p>Waterford is a city in the southeast of Ireland, it is renowed for its rich history, culture and natural landscapes.As Waterford is the oldest city in Ireland, it has a fascinating heritage dating back over a thousand years.With structures such as Reginald's Tower and the iconic Waterford Crystal factory.Visitors to Waterford can explore its historic sites,enjoy scenic walks along the River Suir, and indulge in the citys culture.Waterford offers a memorable experience for travelers that are looking for a wonderful journey.</p>
+            <video class="img-fluid" controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="col-md-6">
+            <div id="map" style="height: 530px; background-color: #f2f2f2;">Waterford Map</div>
+        </div>
+    </div>
+
+    <!--Images -->
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <h2 class="text-center">Waterford Popular Sites</h2>
+            <div class="d-flex justify-content-center">
+                <div class="rectangle">
+                    <img src="reginalds_tower.jpg" alt="Reginalds Tower">
+                    <img src="museum.jpg" alt="Medieval Museum">
+                    <img src="crystal.jpg" alt="Waterford Crystal">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking -->
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <h2>Come Book With Us</h2>
+            <p>Why book with us? We offer many services ranging from tour guides, event planning and transportations for our travellers. Our team of experts are knowledgeable guides, travelling and historical events, They will make sure to provide you with the best experience you can have during your stay in Waterford. With our commitment to providing you with the best possible experience we gurantee that you will leave with many memorable and wonderful experience during your tour. So why not Book with us today?</p>
+        </div>
+        <div class="col-md-6">
+            <a href="booking.html"><img src="book.png" alt="Book Here"></a>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+    <div class="container d-flex flex-column align-items-center">
+        <div class="row">
+            <div class="col-md-3 d-flex flex-column align-items-center">
+                <h3 class="text-center">Explore Waterford</h3>
+                <h4 class="text-center">Follow Our Socials</h4>
+                <div class="social-icons">
+                    <img src="youtube.png" alt="youtube">
+                    <img src="instagram.png" alt="instagram">
+                    <img src="facebook.png" alt="facebook">
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12 text-center">
+                <p>&copy; 2024 ExploreWaterford.com. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--  Maps -->
+<script>
+    function initMap() {
+        var mapOptions = {
+            center: { lat: 52.259319, lng: -7.110070 }, 
+            zoom: 12
+        };
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?ke+y=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>
